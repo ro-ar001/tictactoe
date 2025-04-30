@@ -29,7 +29,7 @@ X_WIDTH = 20
 SPACE = 55
 
 class PygameTicTacToeGUI:
-    def _init_(self):
+    def __init__(self):
         pygame.init()
         self.screen = pygame.display.set_mode((WIDTH, HEIGHT))
         pygame.display.set_caption('Tic Tac Toe - DRL Training')
@@ -317,6 +317,6 @@ class PygameTicTacToeGUI:
         
         pygame.quit()
 
-if _name_ == "_main_":
+if __name__ == "__main__":
     gui = PygameTicTacToeGUI()
     gui.run()
