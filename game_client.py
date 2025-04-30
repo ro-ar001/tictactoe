@@ -7,7 +7,7 @@ from typing import Dict, List, Optional, Callable
 logger = logging.getLogger('TicTacToe-Client')
 
 class TicTacToeClient:
-    def _init_(self, host: str = 'localhost', port: int = 5555):
+    def __init__(self, host: str = 'localhost', port: int = 5555):
         self.host = host
         self.port = port
         self.sock = None
