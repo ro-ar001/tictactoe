@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 from collections import deque
 
 class TicTacToeAI:
-    def _init_(self):
+    def __init__(self):
         self.q_table = {}
         self.epsilon = 1.0  # Exploration rate
         self.epsilon_min = 0.01
