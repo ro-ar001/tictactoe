@@ -35,5 +35,5 @@ def plot_episode_rewards():
     plt.tight_layout()
     plt.show()
 
-if _name_ == "_main_":
+if __name__ == "__main__":
     plot_episode_rewards()
